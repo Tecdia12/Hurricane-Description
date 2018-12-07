@@ -1,0 +1,30 @@
+int Wind = 0;
+
+            Console.Title = " ****HURRICANE MONITOR AND SCALE**** ";
+            Console.WriteLine(" \n Report wind speed: ");
+            Wind = int.Parse(Console.ReadLine());
+
+            if (Wind >= 119 && Wind <= 153)
+            {
+                
+                Console.WriteLine("\n 1º Pode provocar ondas de até 1,5 metro acima do nível normal. ");
+                Console.WriteLine("\n 2º Os ventos são classificados como muito perigosos e potenciais causadores de danos como derrubada de galhos de árvores e destruição de telhados e revestimentos.");
+                Console.WriteLine("\n 3º Pode ocorrer danos em linhas de energia, seguidas por vários dias de apagão.");
+            }
+            else if (Wind >= 154 && Wind <= 177)
+            {
+                Console.WriteLine("\n 1º Chega ao continente provocando ondas até 2,5 metros mais altas. ");
+                Console.WriteLine("\n 2º Neste nível, a perda de energia quase total por dias ou até semanas já é esperada. . ");
+                Console.WriteLine("\n 3º Árvores de raízes curtas e casas construídas somente na superfícies podem ser tombadas, embora construções mais robustas aguentem os ventos. ");
+            }
+            else if (Wind >= 178 && Wind <= 209)
+            {
+                Console.WriteLine("\n 1º A partir deste ponto, são chamados de grandes furacões e a costa do continente tende a alagar rapidamente. ");
+                Console.WriteLine("\n 2º Neste nível, a perda de energia quase total por dias ou até semanas já é esperada. . ");
+            }
+            Console.ReadKey();
+        }
+
+    }
+
+}
