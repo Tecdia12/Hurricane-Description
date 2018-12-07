@@ -1,4 +1,4 @@
-int Wind = 0;
+ int Wind = 0;
 
             Console.Title = " ****HURRICANE MONITOR AND SCALE**** ";
             Console.WriteLine(" \n Report wind speed: ");
@@ -6,25 +6,37 @@ int Wind = 0;
 
             if (Wind >= 119 && Wind <= 153)
             {
-                
-                Console.WriteLine("\n 1º Pode provocar ondas de até 1,5 metro acima do nível normal. ");
-                Console.WriteLine("\n 2º Os ventos são classificados como muito perigosos e potenciais causadores de danos como derrubada de galhos de árvores e destruição de telhados e revestimentos.");
-                Console.WriteLine("\n 3º Pode ocorrer danos em linhas de energia, seguidas por vários dias de apagão.");
+                Console.WriteLine("\n *** SCALE 1 ***");
+                Console.WriteLine("\n 1º It can cause waves of up to 1.5 meters above normal level. ");
+                Console.WriteLine("\n 2º Winds are classified as very dangerous and potentially damaging such as tree felling and roofing and roofing. ");
+                Console.WriteLine("\n 3º Damage to power lines can occur, followed by several days of blackout. ");
             }
             else if (Wind >= 154 && Wind <= 177)
             {
-                Console.WriteLine("\n 1º Chega ao continente provocando ondas até 2,5 metros mais altas. ");
-                Console.WriteLine("\n 2º Neste nível, a perda de energia quase total por dias ou até semanas já é esperada. . ");
-                Console.WriteLine("\n 3º Árvores de raízes curtas e casas construídas somente na superfícies podem ser tombadas, embora construções mais robustas aguentem os ventos. ");
+                Console.WriteLine("\n  *** SCALE 2 ***");
+                Console.WriteLine("\n 1º It arrives to the continent causing waves up to 2.5 meters taller. ");
+                Console.WriteLine("\n 2º At this level, almost total energy loss for days or even weeks is expected. ");
+                Console.WriteLine("\n 3º Trees with short roots and houses built only on surfaces can be tilted, although more robust buildings withstand the winds. ");
             }
             else if (Wind >= 178 && Wind <= 209)
             {
-                Console.WriteLine("\n 1º A partir deste ponto, são chamados de grandes furacões e a costa do continente tende a alagar rapidamente. ");
-                Console.WriteLine("\n 2º Neste nível, a perda de energia quase total por dias ou até semanas já é esperada. . ");
+                Console.WriteLine("\n *** SCALE 3 ***");
+                Console.WriteLine("\n 1º From this point, they are called great hurricanes and the coast of the continent tends to flood rapidly. ");
+                Console.WriteLine("\n 2º can be destroyed and severe damage to buildings can be observed, such as total roof removal. Trees already run the risk of flying through the air. ");
+                Console.WriteLine("\n 3º Roads need blockage and the population will not have supply of the collective service of energy and water for weeks. ");
+            }
+            else if (Wind >= 210 && Wind <= 249)
+            {
+                Console.WriteLine("\n *** SCALE 4 ***");
+                Console.WriteLine("\n 1º Requires evacuation of the coastal area up to 10 km from the coast, as the waves can reach 5.5 meters. The flooding of the city can occur up to 3 meters above sea level. ");
+                Console.WriteLine("\n 2º Most of the trees will be ripped off and well-built houses must have even walls destroyed. ");
+                Console.WriteLine("\n 3º Most of the affected area will be uninhabitable for up to a few months. ");
+            }
+            else if (Wind >= 250)
+            {
+                Console.WriteLine("\n *** SCALE 5 ***");
+                Console.WriteLine("\n 1º It is the strongest level a hurricane can hit and the trail of destruction is great. Evacuation of areas within 16 km from the coast is recommended. ");
+                Console.WriteLine("\n 2º The damages are classified as catastrophic: high percentage of houses total destroyed, trees uprooted, power poles unviable. ");
+                Console.WriteLine("\n 3º It takes months for the area to be habitable again. ");
             }
             Console.ReadKey();
-        }
-
-    }
-
-}
